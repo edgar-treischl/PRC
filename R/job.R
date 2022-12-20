@@ -1,4 +1,4 @@
-#' Check functions works
+#' Check whether functions works
 #'
 #' @param i as an input
 #'
