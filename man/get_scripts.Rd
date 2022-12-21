@@ -7,7 +7,7 @@
 get_scripts(script)
 }
 \arguments{
-\item{script}{}
+\item{script}{The scripts name}
 }
 \value{
 scripts

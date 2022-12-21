@@ -7,7 +7,7 @@
 copy_scripts(search = "all")
 }
 \arguments{
-\item{search}{}
+\item{search}{The search name}
 }
 \value{
 scripts

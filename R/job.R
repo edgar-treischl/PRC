@@ -1,6 +1,6 @@
 #' Check whether functions works
 #'
-#' @param script
+#' @param script The scripts name
 #'
 #' @return scripts
 #' @export
@@ -35,12 +35,11 @@ get_scripts <- function(script) {
         append = FALSE)
 }
 
-#copy_scripts(script = search)
 
 
 #' Check whether functions works
 #'
-#' @param search
+#' @param search The search name
 #'
 #' @return scripts
 #' @export
@@ -61,7 +60,7 @@ copy_scripts <- function(search = "all") {
 
 #' Check whether functions works
 #'
-#' @param script
+#' @param script The script name
 #'
 #' @return scripts
 #' @export
@@ -91,7 +90,7 @@ catch_errors <- function(script) {
 
 #' Check whether functions works
 #'
-#' @param script
+#' @param script The script name
 #'
 #' @return scripts
 #' @export
@@ -137,3 +136,6 @@ errors_pr <- function() {
   purrr::map(files, write_errors)
   unlink(files)
 }
+
+
+utils::globalVariables(c("script", "search"))

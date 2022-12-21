@@ -7,7 +7,7 @@
 write_errors(script)
 }
 \arguments{
-\item{script}{}
+\item{script}{The script name}
 }
 \value{
 scripts
