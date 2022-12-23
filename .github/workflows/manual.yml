@@ -6,13 +6,13 @@ on:
     branches: [main, master]
 
 
-name: Edgar
+name: testrun
 
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  Edgar:
+  testrun:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,7 @@ jobs:
 #      run: |
 #        R -e 'install.packages("beepr")'
 # Run R script
-    - name: Testrun
+    - name: testrun
       run: Rscript test.R
 
 
