@@ -28,6 +28,6 @@ jobs:
 #        R -e 'install.packages("beepr")'
 # Run R script
     - name: testrun
-      run: Rscript test.R
+      run: Rscript R/test.R
 
 
