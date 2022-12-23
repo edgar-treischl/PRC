@@ -35,8 +35,10 @@ jobs:
 
     - name: Install packages
       run: |
-        R -e 'install.packages("tidyverse")'
-
+        R -e 'install.packages("beepr")'
+# Run R script
+    - name: Scrape
+      run: Rscript test.R
 
 
 
