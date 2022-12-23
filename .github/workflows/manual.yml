@@ -27,4 +27,5 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Test
-      run: Rscript test.R
+      run: source("R/test.R")
+      shell: Rscript {0}
