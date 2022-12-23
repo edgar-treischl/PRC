@@ -29,5 +29,5 @@ jobs:
     - uses: r-lib/actions/setup-r@master # Set up R runtime
     # Runs a single command using the runners shell
     - name: Test
-      run: source("R/test.R")
+      run: Rscript test.R
       shell: Rscript {0}
