@@ -23,11 +23,10 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: actions/checkout@v2 # Checkout branch into the runner
-    - uses: r-lib/actions/setup-r@master # Set up R runtime
-    # Runs a single command using the runners shell
-    - name: Test
-      run: Rscript test.R
-      shell: Rscript {0}
+    - uses: actions/checkout@v3
+    - uses: r-lib/actions/setup-r@v2
+    with:
+      r-version: '3.5.3' # The R version to download (if necessary) and use.
+    - run: Rscript -e 'print("hello")'
+
