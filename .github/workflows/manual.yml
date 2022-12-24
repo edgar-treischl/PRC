@@ -23,9 +23,11 @@ jobs:
 
 
 
-#    - name: Install packages
-#      run: |
-#        R -e 'install.packages("beepr")'
+    - name: Install packages
+      run: |
+        R -e 'install.packages("devtools")'
+        R -e 'devtools::install_github("edgar-treischl/PRC")'
+
 # Run R script
     - name: testrun
       run: Rscript R/test.R
